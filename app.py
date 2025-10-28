@@ -1,5 +1,19 @@
 def add(a, b):
     return a + b
 
-def test_add():
-    assert add(2, 3) == 5
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Division by zero is not allowed")
+    return a / b
+
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    print(greet("world"))
